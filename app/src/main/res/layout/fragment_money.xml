@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_title_height"
+        android:background="@color/app_color_base"
+        android:gravity="center"
+        android:text="@string/money_manager_text"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/money_manger_goblance"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/money_manger_blance"
+                android:text="0.00"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:paddingTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/money_manager_text2"
+                android:textColor="@color/gray_item_text_n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/order_manger_goright"
+            android:layout_width="14dp"
+            android:layout_height="14dp"/>
+    </RelativeLayout>
+    <View
+        android:background="@color/gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <RelativeLayout
+        android:id="@+id/money_manger_order"
+        android:layout_width="match_parent"
+        android:layout_height="37dip"
+        android:background="@color/white">
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/order_manger_unprepare"
+            android:layout_width="16dp"
+            android:layout_height="16dp"/>
+        <TextView
+            android:text="@string/money_manager_order"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/order_manger_goright"
+            android:layout_width="14dp"
+            android:layout_height="14dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5">
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

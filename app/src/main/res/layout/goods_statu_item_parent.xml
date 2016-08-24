@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/top_f_v"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/app_common_bg"/>
+
+    <TextView
+        android:id="@+id/item_num_tv"
+        android:layout_below="@id/top_f_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/app_color_base"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/item_time_tv"
+        android:layout_below="@id/item_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/item_dark_color"
+        android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/item_csc_tv"
+            android:layout_below="@id/item_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/item_dark_color"
+            android:textSize="12dp" />
+
+    <LinearLayout
+        android:id="@+id/item_money_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_csc_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结算金额:"
+            android:textColor="@color/item_dark_color"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/item_js_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="￥5000"
+            android:textColor="@color/app_color_base"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/item_money_l"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_line"
+        />
+    
+    <ImageView
+        android:id="@+id/goods_statu_iv"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/item_ex_list_down"/>
+</RelativeLayout>

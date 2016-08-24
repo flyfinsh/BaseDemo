@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_common_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/app_color_base"
+        android:gravity="center"
+        android:text="个人中心"
+        android:textColor="@color/white"
+        android:textSize="@dimen/navigation_title_size"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/user_account_item"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/white_gray">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_head_iv"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/head_logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/user_head_iv"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/user_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小怡"
+                    android:textColor="@color/item_dark_color"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_qian_tv"
+                    android:layout_width="20dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/set_checked_corner_bg"
+                    android:gravity="center"
+                    android:text="签"
+                    android:textColor="@color/app_color_base"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/user_account_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="xiaoyi19920516"
+                android:textColor="@color/tab_gray_color"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/icon_arrow" />
+
+    </RelativeLayout>
+
+    <com.meilicat.basedemo.view.UIPerfectlyItem
+        android:id="@+id/user_msg_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/white_gray"
+        app:dividerBottomLeftMarge="15dp"
+        app:drawBottomDivider="true"
+        app:drawTopDivider="false"
+        app:leftIcon="@mipmap/app_msg"
+        app:leftText="消息"
+        app:rightText="20" />
+
+    <com.meilicat.basedemo.view.UIPerfectlyItem
+        android:id="@+id/user_modify_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_gray"
+        app:dividerBottomLeftMarge="15dp"
+        app:drawBottomDivider="true"
+        app:drawTopDivider="false"
+        app:leftIcon="@mipmap/app_modify"
+        app:leftText="修改密码" />
+
+    <com.meilicat.basedemo.view.UIPerfectlyItem
+        android:id="@+id/user_bank_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_gray"
+        app:drawBottomDivider="false"
+        app:drawTopDivider="false"
+        app:leftIcon="@mipmap/app_wallet"
+        app:leftText="提现银行卡" />
+
+    <com.meilicat.basedemo.view.UIPerfectlyItem
+        android:id="@+id/user_question_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/white_gray"
+        app:dividerBottomLeftMarge="15dp"
+        app:drawBottomDivider="true"
+        app:drawTopDivider="false"
+        app:leftIcon="@mipmap/app_suggestion"
+        app:leftText="问题反馈" />
+
+    <com.meilicat.basedemo.view.UIPerfectlyItem
+        android:id="@+id/user_setting_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_gray"
+        app:drawBottomDivider="false"
+        app:drawTopDivider="false"
+        app:leftIcon="@mipmap/app_setting"
+        app:leftText="设置" />
+
+
+</LinearLayout>

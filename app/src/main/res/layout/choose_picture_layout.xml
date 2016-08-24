@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+    <include layout="@layout/navigation_bar_layout" />
+
+    <RelativeLayout
+        android:id="@+id/id_bottom_ly"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/tab_bg_color"
+        android:layout_alignParentBottom="true"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/id_choose_perview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:text="预览"
+            android:textColor="@color/tab_gray_color"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/id_total_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:text="完成"
+            android:textColor="@color/tab_gray_color"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/id_total_confirm"
+            android:background="@drawable/base_color_circle"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_line"
+            android:layout_alignParentTop="true"/>
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/id_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/id_bottom_ly"
+        android:layout_below="@+id/navigation_bar"
+        android:cacheColorHint="@android:color/transparent"
+        android:clipChildren="true"
+        android:gravity="center"
+        android:horizontalSpacing="3dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="3dp"
+        android:layout_margin="3dp"/>
+</RelativeLayout>

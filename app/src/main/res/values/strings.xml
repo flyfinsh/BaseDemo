@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">美丽猫</string>
+
+    <!-- 下面是矢量图的string-->
+    <string name="appreciate">&#xe600;</string>
+    <string name="icon001">&#xe600;</string>
+    <string name="icon002">&#xe601;</string>
+
+    <string name="eye">&#xe60f;</string>
+    <string name="icon005">&#xe604;</string>
+    <string name="icon004">&#xe603;</string>
+    <string name="icon003">&#xe602;</string>
+    <string name="icon006">&#xe605;</string>
+    <string name="zxing">&#xe606;</string>
+
+    <string name="font_my_message">&#xe607;</string>
+    <string name="font_account_set">&#xe608;</string>
+    <string name="font_psw_set">&#xe609;</string>
+    <string name="font_draw_set">&#xe60a;</string>
+    <string name="font_question_back">&#xe60b;</string>
+    <string name="font_setting">&#xe60c;</string>
+    <!-- 上面是矢量图的string-->
+    <string name="input_type">0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM</string>
+
+    <string name="login_user_hint">请输入账号</string>
+    <string name="login_pwd_hint">请输入密码</string>
+    <string name="login_btn">登录</string>
+    <string name="login_normal_name">美丽猫供应商平台</string>
+
+    <string name="x"> x</string>
+
+    <string name="sys">扫一扫</string>
+    <string name="order1">未处理订单</string>
+    <string name="order2">待备货件数</string>
+    <string name="order3">仓库待发货件数</string>
+    <string name="order4">今日新增订单</string>
+    <string name="order5">今日结算订单</string>
+    <string name="order6">今日退款订单</string>
+    <string name="buyer_order1">待提货商品</string>
+    <string name="buyer_order2">已提货商品</string>
+    <string name="buyer_handler_1">今日</string>
+    <string name="buyer_handler_2">一周内</string>
+    <string name="buyer_handler_3">一月内</string>
+    <string name="buyer_handler_4">历史</string>
+    <string name="buyer_unhandler_1">未来七天</string>
+    <string name="buyer_unhandler_2">全部</string>
+
+    <string name="buyer_handler_orderdetails_1">商品</string>
+    <string name="buyer_handler_orderdetails_2">订单号</string>
+    <string name="buyer_handler_orderdetails_3">付款时间</string>
+    <string name="buyer_handler_orderdetails_4">名称</string>
+    <string name="buyer_handler_orderdetails_5">货号</string>
+    <string name="buyer_handler_orderdetails_6">颜色</string>
+    <string name="buyer_handler_orderdetails_7">尺码</string>
+    <string name="buyer_handler_orderdetails_8">数量</string>
+    <string name="buyer_handler_orderdetails_9">结算金额</string>
+    <string name="buyer_handler_orderdetails_10">标记</string>
+    <string name="buyer_handler_orderdetails_11">签收</string>
+    <string name="buyer_handler_orderdetails_12">签收时间</string>
+    <string name="buyer_handler_orderdetails_13">签收人</string>
+    <string name="buyer_handler_orderdetails_14">签收备注</string>
+
+
+    <string name="calender_nopru">暂不生产</string>
+    <string name="buyer_order3">请输入签收备注</string>
+    <string name="buyer_order4">不能超过250个字符</string>
+    <string name="buyer_order5">确认签收</string>
+    <string name="buyer_order6">供应商</string>
+    <string name="buyer_order7">已提货商品</string>
+    <string name="buyer_order8">订单详情</string>
+
+    <string name="order_manager_payprice">结算金额：</string>
+    <string name="order_manager_goodsname">名称：</string>
+    <string name="order_manager_goodsnum">货号：</string>
+    <string name="order_manager_goodscolor">颜色：</string>
+    <string name="order_manager_goodssize">尺码：</string>
+    <string name="order_manager_goodsprice">价格：</string>
+
+    <string name="home_fragment_loading_error">加载失败,点击重试</string>
+    
+    <string name="app_back_text">返回</string>
+
+    <string name="money_manager_text">余额</string>
+    <string name="money_manager_order">账单</string>
+    <string name="money_manager_text2">账户余额(元)</string>
+    <string name="money_manager_text3">账户余额</string>
+    <string name="money_manager_text4">提现</string>
+    <string name="money_manager_text5">账单</string>
+    <string name="money_manager_text6">入账详情</string>
+
+    <string name="string_empty">暂无记录</string>
+
+    <string name="goods_manager_text">商品管理</string>
+    <string name="goods_name_text">名称:</string>
+    <string name="goods_num_text">货号:</string>
+    <string name="goods_price_text">价格:</string>
+    <string name="goods_color_text">颜色:</string>
+    <string name="goods_size_text">尺码:</string>
+    <string name="goods_inventory_text">现库存:</string>
+    <string name="goods_sale_text">已卖出:</string>
+    <string name="goods_way_text">在途中:</string>
+
+    <string name="app_cancel_text">取消</string>
+    <string name="app_confirm_text">确认</string>
+    <string name="app_delete_text">删除</string>
+    
+    <string name="app_list_empty_text">还没有相关数据</string>
+
+    <string name="goods_check_refused_text">已拒绝</string>
+    <string name="goods_check_pass_text">审核通过</string>
+    <string name="goods_check_ing_text">审核中</string>
+    <string name="goods_check_modify_text">修改重新提交</string>
+    <string name="goods_statu_csc_text">颜色：%1$s   尺码：%2$s   数量：%3$s件</string>
+
+    <string name="goods_title_text">标题</string>
+    <string name="goodsnum_text">货号</string>
+    <string name="goods_type_text">类型</string>
+    <string name="goods_money_text">金额</string>
+    <string name="goods_season_text">季节</string>
+    <string name="goods_norms_text">商品规格</string>
+    <string name="downloading">正在加载…</string>
+    <string name="pic_choose_load_tips">正在加载图片...</string>
+
+</resources>

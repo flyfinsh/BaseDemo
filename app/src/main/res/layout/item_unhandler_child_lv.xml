@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--可扩展的listview的子view的listview的item-->
+    <com.meilicat.basedemo.view.CustomBuyerCommontView
+        android:id="@+id/cutom_order_view"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </com.meilicat.basedemo.view.CustomBuyerCommontView>
+
+    <com.meilicat.basedemo.view.CutomStateInfoView
+        android:id="@+id/cutom_state_info_view"
+        android:paddingBottom="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.meilicat.basedemo.view.CutomStateInfoView>
+</LinearLayout>

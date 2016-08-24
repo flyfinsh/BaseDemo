@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_common_bg"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    >
+
+    <include layout="@layout/navigation_bar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="颜色分类"
+                android:textSize="15dp"
+                android:textColor="@color/tab_gray_color"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_line"/>
+            
+            <ListView
+                android:id="@+id/norms_color_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:scrollbars="none"
+                android:listSelector="@android:color/transparent"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/tab_bg_color"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="尺码"
+                android:textSize="15dp"
+                android:textColor="@color/tab_gray_color"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_line"/>
+
+            <ListView
+                android:id="@+id/norms_size_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:scrollbars="none"
+                android:listSelector="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/norms_sel_num_tv"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="已选（0）"
+                android:textSize="15dp"
+                android:textColor="@color/tab_gray_color"/>
+
+            <ListView
+                android:id="@+id/norms_sel_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:scrollbars="none"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:dividerHeight="5dp"
+                android:listSelector="@android:color/transparent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

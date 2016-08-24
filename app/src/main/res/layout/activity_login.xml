@@ -1,0 +1,172 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_bg"
+    android:background="#F1F1F1"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/login_userlogo"
+                android:layout_width="220px"
+                android:layout_height="220px"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/head_logo"/>
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/login_userlogo"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/login_normal_name"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="2">
+
+
+        <LinearLayout
+            android:id="@+id/heihei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_edittext_focused"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <com.meilicat.basedemo.view.IconTextView
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/icon001"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="28sp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6">
+                    <EditText
+                        android:id="@+id/login_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="@string/login_user_hint"
+                        android:digits="@string/input_type"
+                        android:maxLength="11"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@mipmap/login_username_delete"
+                        android:id="@+id/login_username_delete"
+                        android:textSize="19sp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/gray_line"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp">
+
+                    </ImageView>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#BDBDBD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <com.meilicat.basedemo.view.IconTextView
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/icon002"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="28sp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6">
+                    <EditText
+                        android:id="@+id/login_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="@string/login_pwd_hint"
+                        android:maxLength="18"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+         </LinearLayout>
+        <Button
+            android:layout_below="@id/heihei"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/login_btn"
+            android:text="@string/login_btn"
+            android:textColor="#fff"
+            android:background="@drawable/login_btn_bg_selector"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_marginTop="30px"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

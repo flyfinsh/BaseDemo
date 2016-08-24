@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--这是待处理订单的界面-->
+    <!--导入标题栏-->
+    <include layout="@layout/navigation_bar_layout"/>
+
+    <com.cjj.MaterialRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/order_unhandler_refresh"
+        android:orientation="vertical"
+        app:overlay="true"
+        app:isLoadMore="true"
+        app:wave_color="@android:color/transparent"
+        app:wave_show="true"
+        >
+        <com.meilicat.basedemo.view.AnimatedExpandableListView
+            android:id="@+id/order_unhandler_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#EEEEEE">
+        </com.meilicat.basedemo.view.AnimatedExpandableListView>
+    </com.cjj.MaterialRefreshLayout>
+
+</LinearLayout>

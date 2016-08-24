@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/norms_sel_right_layout"
+        android:layout_width="32dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_gray"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/norms_sel_delete_icon"
+            android:scaleType="centerInside"
+            android:layout_centerInParent="true"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_line"
+            android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/norms_sel_right_layout">
+        <TextView
+            android:id="@+id/norms_sel_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/item_dark_color"
+            />
+
+        <!--
+        android:layout_marginTop="10dp"
+        <TextView
+            android:id="@+id/norms_sel_price_tv"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@id/norms_sel_value_tv"
+            android:background="@drawable/norms_sel_price_corner_bg"
+            android:textSize="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:text="￥260.00"
+            android:textColor="@color/item_dark_color"
+            />
+            -->
+
+    </RelativeLayout>
+
+</RelativeLayout>

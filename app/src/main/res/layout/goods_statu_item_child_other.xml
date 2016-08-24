@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="22dp">
+
+        <View
+            android:id="@+id/top_one_line"
+            android:layout_width="2dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="3dp"
+            android:background="@color/gray_line" />
+
+        <View
+            android:id="@+id/top_line"
+            android:layout_width="2dp"
+            android:layout_height="3dp"
+            android:layout_below="@id/top_one_line"
+            android:layout_marginLeft="3dp"
+            android:background="@color/gray_line" />
+
+        <ImageView
+            android:id="@+id/left_tag_iv"
+            android:layout_width="11dp"
+            android:layout_height="8dp"
+            android:layout_below="@id/top_line"
+            android:scaleType="centerInside"
+            android:src="@mipmap/item_ex_list_tag" />
+
+        <View
+            android:id="@+id/down_line"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/left_tag_iv"
+            android:layout_marginLeft="3dp"
+            android:background="@color/gray_line" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/top_one_empty"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/child_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已处理"
+                android:textColor="@color/item_dark_color"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/child_test_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="货品需要在1月25号 19点前配齐"
+                android:textColor="@color/tab_gray_color"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/sign_finish_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_solid_pink"
+            android:padding="5dp"
+            android:text="请标记备齐时间"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            />
+        <com.meilicat.basedemo.view.CustomSignView
+            android:visibility="gone"
+            android:id="@+id/sign_view"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+        </com.meilicat.basedemo.view.CustomSignView>
+        <com.meilicat.basedemo.view.CustomPayView
+            android:visibility="gone"
+            android:id="@+id/pay_view"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+        </com.meilicat.basedemo.view.CustomPayView>
+
+        <LinearLayout
+            android:id="@+id/child_state_mother"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+        <View
+            android:id="@+id/bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_common_bg"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/navigation_bar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <com.meilicat.basedemo.view.ScrollGridView
+                    android:id="@+id/goods_pic_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:verticalSpacing="5dp" />
+
+                <RelativeLayout
+                    android:id="@+id/goods_pic_emptyp_layout"
+                    android:layout_width="115dp"
+                    android:layout_height="172dp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/gray_border_shape">
+
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/icon_photo_add" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/goods_pic_title_item"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/white_gray">
+
+                <TextView
+                    android:id="@+id/goods_pic_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/goods_title_text"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/goods_pic_title_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@id/goods_pic_title_tv"
+                    android:background="@color/white"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入商品标题"
+                    android:singleLine="true"
+                    android:textColor="@color/tab_gray_color"
+                    android:textColorHint="@color/tab_gray_c"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/goods_pic_title_ct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@id/goods_pic_title_tv"
+                    android:background="@color/white"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/tab_gray_color"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/gray_line" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/goods_pic_num_item"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/white_gray">
+
+                <TextView
+                    android:id="@+id/goods_pic_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/goodsnum_text"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/goods_pic_num_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@id/goods_pic_num_tv"
+                    android:background="@color/white"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入货号后四位大写字母"
+                    android:singleLine="true"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:maxLength="4"
+                    android:textColor="@color/tab_gray_color"
+                    android:textColorHint="@color/tab_gray_c"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/goods_pic_num_ct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@id/goods_pic_num_tv"
+                    android:background="@color/white"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/tab_gray_color"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <com.meilicat.basedemo.view.UIItem
+                android:id="@+id/goods_pic_type_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_gray"
+                app:dividerTopLeftMarge="15dp"
+                app:drawBottomDivider="false"
+                app:drawTopDivider="true"
+                app:leftText="@string/goods_type_text"
+                app:rightText="请选择类型" />
+
+
+            <RelativeLayout
+                android:id="@+id/goods_pic_money_item"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/white_gray">
+
+                <TextView
+                    android:id="@+id/goods_pic_money_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/goods_money_text"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/goods_pic_money_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@id/goods_pic_money_tv"
+                    android:background="@color/white"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入金额"
+                    android:numeric="integer"
+                    android:singleLine="true"
+                    android:maxLength="5"
+                    android:textColor="@color/tab_gray_color"
+                    android:textColorHint="@color/tab_gray_c"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/goods_pic_money_ct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@id/goods_pic_money_tv"
+                    android:background="@color/white"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/tab_gray_color"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <com.meilicat.basedemo.view.UIItem
+                android:id="@+id/goods_pic_season_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_gray"
+                app:dividerBottomLeftMarge="15dp"
+                app:dividerTopLeftMarge="15dp"
+                app:drawBottomDivider="true"
+                app:drawTopDivider="true"
+                app:leftText="@string/goods_season_text"
+                app:rightText="请选择季节" />
+
+            <com.meilicat.basedemo.view.UIItem
+                android:id="@+id/goods_pic_norms_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/white_gray"
+                app:drawBottomDivider="false"
+                app:drawTopDivider="false"
+                app:leftText="@string/goods_norms_text"
+                app:rightText="未编辑" />
+
+            <LinearLayout
+                android:id="@+id/goods_pic_norms_look_item"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="@string/goods_norms_text"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/goods_pic_norms_look_cs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/tab_gray_color"
+                    android:textSize="15dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

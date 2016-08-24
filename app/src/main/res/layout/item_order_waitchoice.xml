@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.meilicat.basedemo.view.CutomOrderItemView
+        android:id="@+id/order_waitchoice_item_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </com.meilicat.basedemo.view.CutomOrderItemView>
+
+    <RelativeLayout
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/order_waitchoice_item_state"
+            android:layout_width="55dp"
+            android:layout_height="28dp"
+            android:text="未签收"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:clickable="false"
+            android:background="@drawable/bg_solid_red"/>
+        <Button
+            android:id="@+id/order_waitchoice_item_signstate"
+            android:layout_toRightOf="@id/order_waitchoice_item_state"
+            android:layout_width="75dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="10dp"
+            android:text="提前签收"
+            android:textSize="12sp"
+            android:background="@drawable/bg_solid_gray"/>
+        <TextView
+            android:id="@+id/order_waitchoice_item_name"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="签收人："/>
+        <TextView
+            android:id="@+id/order_waitchoice_item_signtime"
+            android:layout_toLeftOf="@id/order_waitchoice_item_name"
+            android:layout_marginRight="10dp"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="签收时间：2016.1.15"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

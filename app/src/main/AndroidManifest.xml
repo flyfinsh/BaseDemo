@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.meilicat.basedemo">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 系统dialog需要的权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyTheme">
+
+        <!-- 应用市场配置 -->
+        <meta-data
+            android:name="APP_CATEGORY"
+            android:value="${CATEGORY}"></meta-data>
+
+        <meta-data
+            android:name="design_width"
+            android:value="768"></meta-data>
+        <meta-data
+            android:name="design_height"
+            android:value="1280"></meta-data>
+
+        <activity android:name=".activity.LoginAcitivity">
+
+        </activity>
+        <activity android:name=".SecondActivity"></activity>
+
+        <activity
+            android:name=".activity.commonditymanager.CommondityDetailsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.commonditymanager.CommodityPublishActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.commonditymanager.PictureChooseActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.commonditymanager.PictureViewerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.commonditymanager.SeasonChooseActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.usercenter.QuestionBackActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.usercenter.SettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.usercenter.WebviewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.usercenter.BankListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.usercenter.PswModifyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.usercenter.MsgListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.usercenter.AccountActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.usercenter.CommonModifyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".activity.usercenter.DownloadService"
+            android:exported="false"
+            android:process=":download">
+            <intent-filter>
+                <action android:name="com.dataprogress.doService" />
+            </intent-filter>
+        </service>
+
+        <!-- 接收数据下载进度的广播接收者 -->
+        <receiver
+            android:name=".activity.usercenter.ProgressShowReceiver"
+            android:exported="false"
+            android:process=":download">
+            <intent-filter>
+                <action android:name="com.dataprogress.doService" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.commonditymanager.GoodsNormsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".base.ClipPictureActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GuideActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.HomeActivity2"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".view.calendar.CalendarActivity"></activity>
+        <activity android:name=".activity.orderactivity.OrderCommontActivty"></activity>
+        <activity android:name=".activity.moneyactivity.MoneyMangerBlance"></activity>
+        <activity android:name=".activity.moneyactivity.MoneyMangerBlanceChange"></activity>
+        <activity android:name=".activity.moneyactivity.MoneyMangerOrder"></activity>
+        <activity android:name=".activity.moneyactivity.MoneyMangerOrderInner"></activity>
+        <activity android:name=".activity.buyeractivity.BuyerUnhandlerConfirmActivity"></activity>
+        <activity android:name=".activity.buyeractivity.BuyerHandlerActivity"></activity>
+        <activity android:name=".activity.BuyerHomeActivity"></activity>
+        <activity android:name=".activity.buyeractivity.BuyerSupplierSelect" />
+        <activity android:name=".activity.buyeractivity.BuyerHandlerOrderDetails" />
+        <activity android:name=".activity.buyeractivity.BuyerUnhandlerActivityOther"/>
+
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+</manifest>

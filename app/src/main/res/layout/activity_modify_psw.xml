@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_common_bg"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/navigation_bar_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/psw_source_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="原密码"
+            android:textColor="@color/item_dark_color" />
+
+        <com.meilicat.basedemo.view.ClearEditText
+            android:id="@+id/psw_sourch_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/psw_source_tv"
+            android:background="@null"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ"
+            android:gravity="left"
+            android:hint="请输入原密码"
+            android:maxLength="18"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="@color/item_dark_color"
+            android:textColorHint="@color/tab_gray_color"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/psw_new_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="新密码"
+            android:textColor="@color/item_dark_color" />
+
+        <com.meilicat.basedemo.view.ClearEditText
+            android:id="@+id/psw_new_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/psw_new_tv"
+            android:background="@null"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ"
+            android:gravity="left"
+            android:hint="请输入新密码"
+            android:maxLength="18"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="@color/item_dark_color"
+            android:textColorHint="@color/tab_gray_color"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:background="@color/gray_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/psw_agin_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="再次输入"
+            android:textColor="@color/item_dark_color" />
+
+        <com.meilicat.basedemo.view.ClearEditText
+            android:id="@+id/psw_agin_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/psw_agin_tv"
+            android:background="@null"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ"
+            android:gravity="left"
+            android:hint="请再次输入"
+            android:maxLength="18"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="@color/item_dark_color"
+            android:textColorHint="@color/tab_gray_color"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

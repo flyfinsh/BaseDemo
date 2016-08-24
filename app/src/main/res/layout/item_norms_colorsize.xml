@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="42dp">
+
+    <View
+        android:id="@+id/norms_colorsize_icon"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:background="@color/app_color_base"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/norms_colorsize_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/item_dark_color"
+        android:layout_toRightOf="@id/norms_colorsize_icon"
+        android:layout_centerVertical="true"
+        android:text="乳白色"/>
+
+    <ImageView
+        android:id="@+id/norms_colorsize_sel_iv"
+        android:layout_width="15dp"
+        android:layout_height="11dp"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:visibility="gone"
+        android:src="@mipmap/goods_filter_sel" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_line"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.meilicat.basedemo.view.CutomCommontOrderItem
+        android:id="@+id/order_unhandler_item_view"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </com.meilicat.basedemo.view.CutomCommontOrderItem>
+
+  <!--  <Button
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/order_unhandler_item_selecttime"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="180dp"
+        android:textSize="12sp"
+        android:layout_height="35dp"
+        android:text="标记货品备齐时间"
+        android:textColor="#fff"
+        android:background="#F22D00"/>-->
+    <ListView
+        android:id="@+id/order_unhandler_item_lv"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </ListView>
+</LinearLayout>

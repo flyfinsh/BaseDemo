@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <View
+            android:id="@+id/line_1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="45dp"
+            android:background="@color/gray_line"
+            android:layout_width="1dip"
+            android:layout_height="10dp"/>
+        <ImageView
+            android:id="@+id/arrow_first"
+            android:layout_below="@id/line_1"
+            android:background="@mipmap/order_process_head"
+            android:layout_marginLeft="38dp"
+            android:layout_width="20dp"
+            android:layout_height="10dp"/>
+        <TextView
+            android:id="@+id/mark_first"
+            android:layout_marginLeft="20dp"
+            android:text="未处理"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/arrow_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_below="@id/mark_first"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/arrow_first"
+            android:textColor="@color/white"
+            android:text="标记货品备齐时间"
+            android:textSize="12sp"
+            android:background="@drawable/bg_solid_pink"
+            android:layout_width="110dp"
+            android:layout_height="30dp"/>
+        <View
+            android:background="@color/gray_line"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="45dp"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <View
+            android:id="@+id/line_3"
+            android:background="@color/gray_line"
+            android:layout_width="1dip"
+            android:layout_height="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="45dp"/>
+        <ImageView
+            android:id="@+id/arrow_second"
+            android:layout_below="@id/line_3"
+            android:background="@mipmap/order_process_head"
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="38dp"/>
+        <TextView
+            android:id="@+id/mark_second"
+            android:layout_marginLeft="20dp"
+            android:text="已签收"
+            android:textSize="12sp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/arrow_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+       <!-- <ListView
+            android:layout_below="@id/mark_second"
+            android:id="@+id/lv_second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">-->
+        <TextView
+            android:text="晚一天入库"
+            android:layout_marginLeft="20dp"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/arrow_second"
+            android:layout_below="@id/mark_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="45dp"
+            android:background="@color/gray_line"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@color/gray_line"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="45dp"
+            android:layout_width="1dip"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

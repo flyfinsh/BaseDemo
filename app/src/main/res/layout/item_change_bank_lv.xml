@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/item_bank_change_divi"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@mipmap/pink_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_gravity="center_vertical"
+            android:background="@color/gray_line"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="1dp"/>
+        <TextView
+            android:id="@+id/item_change_bank_name"
+            android:layout_gravity="center_vertical"
+            android:text="招商银行 "
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/item_change_bank_type"
+            android:layout_gravity="center_vertical"
+            android:text="储蓄卡"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/gray_line"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:paddingTop="2dp"
+            android:textColor="@color/white"
+            android:text="****   ****   ****   "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/item_change_bank_four"
+            android:text="8888"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

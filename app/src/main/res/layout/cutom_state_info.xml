@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="22dp">
+
+            <View
+                android:id="@+id/top_one_line"
+                android:layout_width="2dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="3dp"
+                android:background="@color/gray_line"/>
+
+            <View
+                android:id="@+id/top_line"
+                android:layout_width="2dp"
+                android:layout_height="3dp"
+                android:layout_below="@id/top_one_line"
+                android:layout_marginLeft="3dp"
+                android:background="@color/gray_line"/>
+
+            <ImageView
+                android:id="@+id/left_tag_iv"
+                android:layout_width="11dp"
+                android:layout_height="8dp"
+                android:src="@mipmap/item_ex_list_tag"
+                android:layout_below="@id/top_line"
+                android:scaleType="centerInside"/>
+
+            <View
+                android:id="@+id/down_line"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/left_tag_iv"
+                android:layout_marginLeft="3dp"
+                android:background="@color/gray_line"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/top_one_empty"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@color/white"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/child_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="供应商已处理"
+                    android:textColor="@color/item_dark_color"
+                    android:textSize="12dp" />
+                <View
+                    android:layout_width="17dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"/>
+                <TextView
+                    android:id="@+id/child_test_tv"
+                    android:paddingTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已延期一天"
+                    android:textColor="@color/tab_gray_color"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="22dp">
+
+            <View
+                android:id="@+id/top_one_line2"
+                android:layout_width="2dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="3dp"
+                android:background="@color/gray_line"/>
+
+            <View
+                android:id="@+id/top_line2"
+                android:layout_width="2dp"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/top_one_line2"
+                android:layout_marginLeft="3dp"
+                android:background="@color/gray_line"/>
+
+            <ImageView
+                android:id="@+id/left_tag_iv2"
+                android:layout_width="11dp"
+                android:layout_height="8dp"
+                android:src="@mipmap/item_ex_list_tag"
+                android:layout_below="@id/top_line2"
+                android:scaleType="centerInside"/>
+
+            <View
+                android:id="@+id/down_line2"
+                android:layout_width="2dp"
+                android:layout_height="2dp"
+                android:layout_below="@id/left_tag_iv2"
+                android:layout_marginLeft="3dp"
+                android:background="@color/gray_line"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/top_one_empty2"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/child_state2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="货品将于1月12号备齐"
+                android:textColor="@color/item_dark_color"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="22dp">
+
+                <View
+                    android:id="@+id/top_one_line3"
+                    android:layout_width="2dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="3dp"
+                    android:background="@color/gray_line"/>
+
+                <View
+                    android:id="@+id/top_line3"
+                    android:layout_width="2dp"
+                    android:layout_height="3dp"
+                    android:layout_below="@id/top_one_line3"
+                    android:layout_marginLeft="3dp"
+                    android:background="@color/gray_line"/>
+
+                <ImageView
+                    android:id="@+id/left_tag_iv3"
+                    android:layout_width="11dp"
+                    android:layout_height="8dp"
+                    android:src="@mipmap/item_ex_list_tag"
+                    android:layout_below="@id/top_line3"
+                    android:scaleType="centerInside"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/state_result"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:orientation="vertical">
+                <View
+                    android:id="@+id/top_one_empty3"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:background="@color/white"/>
+                <TextView
+                    android:id="@+id/child_state3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已签收"
+                    android:textColor="@color/item_dark_color"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/child_state3_info"
+                    android:text="我是签收备注"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/state_button"
+            android:visibility="visible"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="47dp"
+            android:orientation="vertical">
+                <View
+                    android:id="@+id/top_one_empty4"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:id="@+id/state_confirm"
+                    android:text="确认签收"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_width="60dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/bg_solid_pink"/>
+            </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

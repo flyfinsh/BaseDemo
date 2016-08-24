@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_common_bg"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <include layout="@layout/navigation_bar_layout" />
+
+    <com.meilicat.basedemo.view.UIItem
+        android:id="@+id/settings_clear_cache_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/white_gray"
+        app:dividerBottomLeftMarge="15dp"
+        app:drawBottomDivider="true"
+        app:drawTopDivider="false"
+        app:leftText="清除缓存"
+        app:rightText="0KB" />
+
+    <com.meilicat.basedemo.view.UIItem
+        android:id="@+id/settings_check_version_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_gray"
+        app:dividerBottomLeftMarge="15dp"
+        app:drawBottomDivider="true"
+        app:drawTopDivider="false"
+        app:leftText="检查更新"
+        app:rightText="无更新版本" />
+
+    <com.meilicat.basedemo.view.UIItem
+        android:id="@+id/settings_about_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_gray"
+        app:drawBottomDivider="false"
+        app:drawTopDivider="false"
+        app:leftText="关于美丽猫" />
+
+</LinearLayout>

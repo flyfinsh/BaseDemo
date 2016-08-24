@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/login_btn_pink">
+        <RelativeLayout
+            android:id="@+id/money_manger_order_title_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iamge"
+                android:layout_centerInParent="true"
+                android:layout_width="16dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/navigation_back"/>
+            <TextView
+                android:layout_centerVertical="true"
+                android:text="@string/app_back_text"
+                android:layout_toRightOf="@id/iamge"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/money_manger_order_title_name"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/money_manager_text5"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:id="@+id/money_manger_order_date_change"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/money_manger_order_date"
+                android:text="2016年2月"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/godown"
+                android:layout_width="14dp"
+                android:layout_height="14dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:background="@color/gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3">
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/money_manger_order_inner"
+                    android:textSize="20sp"
+                    android:text="88888.33"
+                    android:textColor="@color/login_btn_pink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:paddingTop="4dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="收入(元)"
+                    android:textColor="@color/tab_gray_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:background="@color/gray_line"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/money_manger_order_outer"
+                    android:textSize="20sp"
+                    android:text="8888888.33"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:paddingTop="4dp"
+                    android:textColor="@color/tab_gray_color"
+                    android:layout_gravity="center_horizontal"
+                    android:text="提现(元)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:background="@color/gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="15">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.cjj.MaterialRefreshLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/order_commont_refresh"
+                android:orientation="vertical"
+                app:isLoadMore="true"
+                app:overlay="true"
+                app:wave_color="@android:color/transparent"
+                app:wave_show="true"
+                >
+                <ListView
+                    android:id="@+id/money_manger_order_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </ListView>
+            </com.cjj.MaterialRefreshLayout>
+            <LinearLayout
+                android:id="@+id/money_manger_blance_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/load_fail" />
+
+                <Button
+                    android:id="@+id/error_btn_retry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/bg_solid_pink"
+                    android:text="@string/home_fragment_loading_error"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/money_manger_blance_empty"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+
+                    android:src="@mipmap/load_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="暂无收支记录"
+                    android:textColor="@color/gray_item_text_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/goods_title"
+        android:background="@color/login_btn_pink">
+        <RelativeLayout
+            android:id="@+id/buyer_supplier_title_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iamge"
+                android:layout_centerInParent="true"
+                android:layout_width="16dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/navigation_back"/>
+            <TextView
+                android:layout_centerVertical="true"
+                android:text="@string/app_back_text"
+                android:layout_toRightOf="@id/iamge"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/buyer_order6"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:background="@color/white"
+        android:id="@+id/buyer_supplier_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/home_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="48dp"
+        >
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="@color/home_tab_bg_black"
+        android:layout_gravity="bottom">
+        <RelativeLayout
+            android:id="@+id/home_ordermanger_bg"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/home_tab_selector"
+            android:layout_height="match_parent"
+            >
+            <com.meilicat.basedemo.view.CustomButton
+                android:id="@+id/home_ordermanger"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:paddingTop="7dp"
+                android:layout_centerInParent="true">
+
+            </com.meilicat.basedemo.view.CustomButton>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/home_goods_bg"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/home_tab_selector"
+            android:layout_height="match_parent">
+
+            <com.meilicat.basedemo.view.CustomButton
+                android:id="@+id/home_goods"
+                android:layout_width="60dp"
+                android:background="@drawable/home_tab_selector"
+                android:layout_height="60dp"
+                android:paddingTop="7dp"
+                android:layout_centerInParent="true">
+
+            </com.meilicat.basedemo.view.CustomButton>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/home_add_bg"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/home_tab_add_selector"
+            android:layout_height="match_parent">
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/home_money_bg"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/home_tab_selector"
+            android:layout_height="match_parent">
+
+            <com.meilicat.basedemo.view.CustomButton
+                android:id="@+id/home_money"
+                android:layout_width="60dp"
+                android:paddingTop="7dp"
+                android:background="@drawable/home_tab_selector"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true">
+
+            </com.meilicat.basedemo.view.CustomButton>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/home_user_bg"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/home_tab_selector"
+            android:layout_height="match_parent">
+
+            <com.meilicat.basedemo.view.CustomButton
+                android:id="@+id/home_user"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:paddingTop="7dp"
+                android:background="@drawable/home_tab_selector"
+                android:layout_centerInParent="true">
+
+            </com.meilicat.basedemo.view.CustomButton>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

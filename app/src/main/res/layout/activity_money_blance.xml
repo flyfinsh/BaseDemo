@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:wheel="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/login_btn_pink">
+        <RelativeLayout
+            android:id="@+id/money_manger_blance_title_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iamge"
+                android:layout_centerInParent="true"
+                android:layout_width="16dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/navigation_back"/>
+            <TextView
+                android:layout_centerVertical="true"
+                android:text="返回"
+                android:layout_toRightOf="@id/iamge"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/money_manger_blance_title_name"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/money_manager_text3"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:text="提现"
+            android:textSize="15sp"
+            android:id="@+id/money_manger_blance_title_atm"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/money_manger_blance_rg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/goods_title"
+        android:background="@color/tab_bg_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <RadioButton
+            android:text="全部"
+            android:textSize="15sp"
+            android:checked="true"
+            android:id="@+id/money_manger_blance_rg_1"
+            android:paddingTop="5dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:button="@null"
+            android:textColor="@drawable/custom_button_selector"
+            android:background="@drawable/custom_button_bg_selector"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="45dp"/>
+        <RadioButton
+            android:text="入账"
+            android:textSize="15sp"
+            android:id="@+id/money_manger_blance_rg_2"
+            android:paddingTop="5dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:button="@null"
+            android:textColor="@drawable/custom_button_selector"
+            android:background="@drawable/custom_button_bg_selector"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="45dp"/>
+        <RadioButton
+            android:text="提现"
+            android:textSize="15sp"
+            android:id="@+id/money_manger_blance_rg_3"
+            android:paddingTop="5dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:button="@null"
+            android:textColor="@drawable/custom_button_selector"
+            android:background="@drawable/custom_button_bg_selector"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="45dp"/>
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.cjj.MaterialRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/order_commont_refresh"
+            android:orientation="vertical"
+            app:isLoadMore="true"
+            app:overlay="true"
+            app:wave_color="@android:color/transparent"
+            app:wave_show="true"
+            >
+            <ListView
+                android:id="@+id/money_manger_blance_lv"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        </com.cjj.MaterialRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/money_manger_blance_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/load_fail" />
+
+            <Button
+                android:id="@+id/error_btn_retry"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/bg_solid_pink"
+                android:text="@string/home_fragment_loading_error"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/money_manger_blance_empty"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+
+                android:src="@mipmap/load_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="暂无收支记录"
+                android:textColor="@color/gray_item_text_n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:id="@+id/money_manger_blance_loading"
+            android:visibility="visible"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            wheel:matProg_barColor="@color/login_btn_pink"
+            wheel:matProg_progressIndeterminate="true"/>
+
+
+    </FrameLayout>
+
+</LinearLayout>

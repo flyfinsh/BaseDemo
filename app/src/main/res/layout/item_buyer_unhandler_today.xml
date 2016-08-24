@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/gray_line"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <com.meilicat.basedemo.view.CustomBuyerBrandView
+        android:id="@+id/item_buyer_unhandler_today_commont"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </com.meilicat.basedemo.view.CustomBuyerBrandView>
+
+    <com.meilicat.basedemo.view.SubListView
+        android:id="@+id/order_unhandler_item_lv"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </com.meilicat.basedemo.view.SubListView>
+
+</LinearLayout>

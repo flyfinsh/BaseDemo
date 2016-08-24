@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:text="选择银行卡"
+        android:textColor="@color/gray_item_text_n"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <View
+        android:background="@color/gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"/>
+    <ListView
+        android:paddingTop="15dp"
+        android:paddingBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/change_bank_lv"
+        android:layout_width="300dp"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.cjj.MaterialRefreshLayout
+        android:id="@+id/goods_details_exp_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:isLoadMore="true"
+        app:overlay="true"
+        app:wave_show="false">
+
+        <ExpandableListView
+            android:id="@+id/goods_details_exp_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:scrollbars="none" />
+
+    </com.cjj.MaterialRefreshLayout>
+
+    <TextView
+        android:id="@+id/statu_empty_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/tab_gray_color"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="@string/app_list_empty_text"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
